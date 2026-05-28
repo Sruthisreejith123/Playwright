@@ -15,5 +15,11 @@ await page.locator("//button[contains(@id,'button')]")
 //by index
 await page.locator("(//input[@type='text'])[1]")
 await page.locator("(//button[text()='Add to cart'])[4]")
-//By axes method
+//By axes method-parent
 await page.loactor("//input[@id='single-input-field']/parent::div")
+//By axes method-child
+await page.locator("//div[@class='form-group']//child::input[@id='single-input-field']")
+//By axes method-sibling
+await page.locator("//label[text()='Enter Message']/following-sibling::input")
+//By axes method-ancestor
+await page.locator("//input[@id='single-input-field']/ancestor::div[@class='card']")

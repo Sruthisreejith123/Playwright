@@ -18,6 +18,7 @@ class Dog extends  Animal{
        breedtype(){
         console.log(this.name+" "+ this.breed)
        }
+       
 }
 let animals=new Dog("Tippu","pug")
 animals.breedtype()
